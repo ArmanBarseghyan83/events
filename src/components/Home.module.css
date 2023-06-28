@@ -1,0 +1,46 @@
+.home {
+  color: var(--color-primary);
+}
+
+.home img {
+  width: 100%;
+}
+
+.article {
+  position: absolute;
+  width: 80%;
+  bottom: 2rem;
+  font-size: 1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  line-height: 2;
+  background-color: var(--color-background);
+  padding: 1.5rem;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+}
+
+@media screen and (max-width: 980px) {
+  .article {
+    bottom: -2rem;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .article {
+    bottom: -5rem;
+  }
+}
+
+@media screen and (max-width: 610px) {
+  .article {
+    bottom: -10rem;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .article {
+    bottom: -16rem;
+  }
+}

@@ -1,0 +1,52 @@
+.form {
+  max-width: 40rem;
+  margin: 1.5rem auto;
+}
+
+.form label,
+.form input,
+.form textarea {
+  display: block;
+  width: 100%;
+}
+
+.form input,
+.form textarea {
+  font: inherit;
+  padding: 0.4rem;
+  margin-bottom: 0.5rem;
+}
+
+.form label {
+  color: rgb(194, 194, 194);
+}
+
+.actions {
+  display: flex;
+  gap: 0.8rem;
+  justify-content: flex-end;
+}
+
+.actions button {
+  font: inherit;
+  cursor: pointer;
+  padding: 0.2rem 0.5rem;
+  border: 0.1rem solid var(--color-primary);
+  border-radius: 5px;
+  background-color: var(--color-background);
+  color: var(--color-primary);
+}
+
+.actions button[type="button"] {
+  color: red;
+  border: 0.1rem solid red;
+}
+
+.actions button:hover {
+  color: var(--color-tertiary);
+  border: 0.1rem solid var(--color-tertiary);
+}
+.actions button[type="button"]:hover {
+  color: brown;
+  border: 0.1rem solid brown;
+}

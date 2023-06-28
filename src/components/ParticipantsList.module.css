@@ -1,0 +1,22 @@
+.participants {
+  color: var(--color-secondary);
+  margin: 1rem 0;
+}
+
+.participant {
+  border-bottom: 0.15rem dotted var(--color-tertiary);
+  display: flex;
+  justify-content: space-between;
+  gap: 0.2rem;
+  padding: 0.3rem;
+}
+
+.icon {
+  font-size: 2rem;
+  color: var(--color-primary);
+  cursor: pointer;
+}
+
+.icon:hover {
+  color: var(--color-tertiary);
+}
