@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  transition: all 500ms ease;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.6;
+  background-color: #1c2e31;
+}
+
+main {
+  position: relative;
+  width: 80%;
+  background-color: var(--color-background);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  margin: 8rem auto 1rem auto;
+  padding: 1rem;
+}
+
+:root {
+  --color-primary: rgb(31, 205, 228);
+  --color-secondary: #30d84c;
+  --color-tertiary: rgb(24, 147, 163);
+  --color-background: #264347;
+  --box-shadow: 0 1px 8px rgba(0, 0, 0, 0.486);
+  --border-radius: 10px;
+}
+
+@media screen and (max-width: 550px) {
+  main {
+    width: 90%;
+    margin-top: 7rem;
+  }
+}

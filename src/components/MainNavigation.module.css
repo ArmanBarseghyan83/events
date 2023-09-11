@@ -1,0 +1,27 @@
+.header {
+  z-index: 10;
+  position: fixed;
+  width: 100vw;
+  top: 0;
+  background-color: var(--color-background);
+  box-shadow: var(--box-shadow);
+  margin: auto;
+  padding: 2rem;
+}
+
+.list {
+  display: flex;
+  gap: 1rem;
+}
+
+.list a {
+  font-size: larger;
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--color-primary);
+}
+
+.list a:hover,
+.list a.active {
+  color: var(--color-tertiary);
+}
