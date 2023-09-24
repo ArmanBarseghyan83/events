@@ -5,17 +5,10 @@ function EventsNavigation() {
   return (
     <header className={classes.header}>
       <div className={classes.list}>
-        <NavLink
-          to=""
-          className={({ isActive }) => (isActive ? classes.active : "")}
-          end
-        >
+        <NavLink to="" className={({ isActive }) => (isActive ? classes.active : "")} end >
           All Events
         </NavLink>
-        <NavLink
-          to="new"
-          className={({ isActive }) => (isActive ? classes.active : "")}
-        >
+        <NavLink to="new" className={({ isActive }) => (isActive ? classes.active : "")}>
           New Event
         </NavLink>
       </div>

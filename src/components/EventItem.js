@@ -16,7 +16,7 @@ function EventItem({ event }) {
     <article className={classes.event}>
       <menu className={classes.actions}>
         <Link to="signup">Sign Up</Link>
-        <Link to="participants">Attendees</Link>
+        <Link to="participants">Participants</Link>
       </menu>
       <img src={event.image} alt={event.title} />
 
