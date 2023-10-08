@@ -1,3 +1,12 @@
+:root {
+  --color-primary: rgb(31, 205, 228);
+  --color-secondary: #30d84c;
+  --color-tertiary: rgb(24, 147, 163);
+  --color-background: #264347;
+  --box-shadow: 0 1px 8px rgba(0, 0, 0, 0.486);
+  --border-radius: 10px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -27,15 +36,6 @@ main {
   box-shadow: var(--box-shadow);
   margin: 8rem auto 1rem auto;
   padding: 1rem;
-}
-
-:root {
-  --color-primary: rgb(31, 205, 228);
-  --color-secondary: #30d84c;
-  --color-tertiary: rgb(24, 147, 163);
-  --color-background: #264347;
-  --box-shadow: 0 1px 8px rgba(0, 0, 0, 0.486);
-  --border-radius: 10px;
 }
 
 @media screen and (max-width: 550px) {

@@ -1,10 +1,4 @@
-import {
-  Form,
-  useNavigate,
-  useNavigation,
-  json,
-  redirect,
-} from "react-router-dom";
+import { Form, useNavigate, useNavigation, json, redirect } from "react-router-dom";
 
 import classes from "./EventForm.module.css";
 
@@ -91,9 +85,7 @@ export async function action({ request, params }) {
 
   const response = await fetch(url, {
     method: request.method,
-    headers: {
-      "Content-Type": "application/json",
-    },
+    headers: { "Content-Type": "application/json" },
     body: JSON.stringify(eventData),
   });
 
