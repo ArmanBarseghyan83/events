@@ -6,7 +6,7 @@ import classes from "./EventForm.module.css";
 function EventForm({ method, event }) {
   const navigate = useNavigate();
   const navigation = useNavigation();
-  // 
+  // navigation.state has 3 properties ('submitting', 'loading', and 'idle')
   const isSubmitting = navigation.state === "submitting";
 
   function cancelHandler() {

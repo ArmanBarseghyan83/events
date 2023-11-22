@@ -11,7 +11,7 @@ export default EventDetailPage;
 
 // This data will be available to the route where it passed, and it's child routes, 
 // if used useRouteLoaderData() instead of useLoaderData.
-// Get the event data by the id.
+// Get the event data by its id value.
 export async function loader({ request, params }) {
   const id = params.eventId;
 
@@ -30,7 +30,7 @@ export async function loader({ request, params }) {
 }
 
 // This action gets the form data based on to which route it will be passed in App.js.
-// Delete event by it's id.
+// Delete event by its id value.
 export async function action({ request, params }) {
   const id = params.eventId;
   const response = await fetch(
