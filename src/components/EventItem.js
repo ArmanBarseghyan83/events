@@ -8,6 +8,8 @@ function EventItem({ event }) {
     const procced = window.confirm("Are you sure?");
 
     if (procced) {
+      // Pass the method to the action and submit.
+      // If action is not in the same route in App.js instead of null use action: "someotherpath".
       submit(null, { method: "DELETE" });
     }
   }

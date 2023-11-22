@@ -2,9 +2,11 @@ import { Form, useNavigate, useNavigation, json, redirect } from "react-router-d
 
 import classes from "./EventForm.module.css";
 
+// If this component is not in the route where has been passed the action, use (action ="someotherpath" in the form)
 function EventForm({ method, event }) {
   const navigate = useNavigate();
   const navigation = useNavigation();
+  // 
   const isSubmitting = navigation.state === "submitting";
 
   function cancelHandler() {
@@ -67,6 +69,8 @@ function EventForm({ method, event }) {
 
 export default EventForm;
 
+// This action gets the form data based on to which route it will be passed in App.js.
+// Update or Create a new event.
 export async function action({ request, params }) {
   const data = await request.formData();
   const id = params.eventId;
